@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram Web App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #0088cc;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Telegram Web App</h1>
+    <button onclick="sendData()">Send Data</button>
+
+    <script>
+        function sendData() {
+            // Telegram Web App orqali ma'lumotni botga yuborish
+            Telegram.WebApp.sendData("Hello from Web App!");
+        }
+    </script>
+</body>
+</html>
